@@ -1,7 +1,7 @@
 //main.cpp
 
 #include <iostream>
-#include "2024 alg.h"
+#include "2024alg.h"
 
 int main(){
 	bool keepgoing = true;

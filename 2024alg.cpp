@@ -1,4 +1,4 @@
-//2024 alg.cpp
+//2024alg.cpp
 //input 2 team names and get the winning team
 
 #include <string>
@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <algorithm>
 #include <cctype>
-#include "2024 alg.h"
+#include "2024alg.h"
 
 //function prototypes
 void compare_teams();
