@@ -1,10 +1,20 @@
 # March Madness Numerology
-## Get Every Game Wrong, but Have Fun Doing It
 
 Every year for March Madness, I create a numerology algorithm based on the team names to create my bracket. 
-Starting in 2024, I decided to program the algorithm on my computer rather than on paper as I had in previous years.
+Starting in 2024, I decided to write the algorithm in a program so it can be reused and others can give them a try as well.
 
-I plan on adding my future algorithms to this repo as well.
+## 2026
+### Back to Basics
+This algorithm is inspired by two primary concepts in real numerology: the expression number and the life path number.
+1. The expression number converts a teams name to a value from 1 to 9 which represents the team's natural strengths.
+2. The life path number converts a date to a value from 1 to 9 which is usually used to represent the ultimate endpoint for someone born on this date. For our purposes it captures something about the "essence" of the date.
+
+This algorithm works by using a "compatibility chart" (from this site: https://affinitynumerology.com/faq/compatibility-of-number-energy.php) to compare how well-aligned a team's expression number is with the life path number for the date they play a game on. This sort of represents how much better or worse we predict them to perform in a game on this day. By combining the compatibility score with the seed of the team, we get a value for their performance which we can compare with the other team's to predict a winner.
+
+For random team names and dates, this algorithm picks a 16 seed to beat a 1 seed about 2.5% of the time, which is a good deal more likely than in reality. The algorithm is overly eager across the board to choose upsets, but we know from the principles of numerology that this method is sure to produce good results!
+
+### How To Use
+I don't have any automation tools for inputting the tournament data this year. You must edit the main function to add the desired team names and seeds using the `Team` class and then use `simulate_match` to print the results. It will tell you things like each team's performance and compatibility and other fun stuff. There is an example in the main function already to show how it should work.
 
 ## 2025
 ### Input
